@@ -1,4 +1,5 @@
 import React from "react";
+import ColorfulMessage from "./components/ColorfulMessage";
 
 const App = () => {
   const onClickButton = () => alert();
@@ -6,10 +7,12 @@ const App = () => {
     color: "blue",
     fontSize: "18px"
   };
+
   return (
     <>
       <h1 style={{ color: "pink" }}>Hello</h1>
-      <p style={contentStyle}>World!</p>
+      <ColorfulMessage color="pink" message="Helo" />
+      <ColorfulMessage color="blue" message="World!" />
       <button onClick={onClickButton}>button</button>
     </>
   );
